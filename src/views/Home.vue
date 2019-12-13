@@ -18,17 +18,18 @@
       </g>
     </svg>
     <div class="controls">
-      <v-row>
+      <v-row justify="center">
         <div class="control" v-for="flower in flowers" :key="flower.name">
-          <v-col cols="12" sm="6" md="3">
+          <v-col>
             <v-text-field
-              label="Outlined"
-              placeholder="Placeholder"
+              :label="flower.name"
+              type="number"
+              placeholder="Amount"
+              v-model="flower.amount"
+              step="10" min="10"
               outlined
             ></v-text-field>
           </v-col>
-          <label>{{ flower.name }}</label>
-          <input type="number" v-model="flower.amount" step="10" min="10" />
         </div>
       </v-row>
     </div>
