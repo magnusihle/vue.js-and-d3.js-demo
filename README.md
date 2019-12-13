@@ -1,6 +1,13 @@
 # tech-advisory-board
 
-## Project setup
+Getting to know d3.js and how to use it with Vue.js. There will come more examples on this in the future. 
+
+## Getting started
+```
+git clone git@github.com:magnusihle/vue.js-and-d3.js-demo.git
+```
+
+### Project setup
 ```
 npm install
 ```
